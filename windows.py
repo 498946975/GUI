@@ -70,12 +70,12 @@ class Window():
         onemenu.add_command(label='2')
         onemenu.add_command(label='3')
 
-        self.frm1.config(height=500, width=800, bg='green')
-        # self.frm1.config(height=500, width=800, bg='lightgrey')
+        # self.frm1.config(height=500, width=800, bg='green')
+        self.frm1.config(height=500, width=800, bg='lightgrey')
         self.frm1.grid(row=0, column=1, padx=10, pady=10, sticky=tk.N + tk.S + tk.E + tk.W)
 
-        self.frm2.config(height=100, width=580, bg='red')
-        # self.frm2.config(height=100, width=580, bg='lightgrey')
+        # self.frm2.config(height=100, width=580, bg='red')
+        self.frm2.config(height=100, width=580, bg='lightgrey')
         self.frm2.grid(row=1, column=0, sticky=tk.N + tk.S + tk.E + tk.W, padx=10)
 
         self.frm3.config(height=500, width=760, bg='lightgrey')
@@ -126,9 +126,9 @@ class Window():
         self.QiHuoJinRiYingKui = Text(self.frm3, width=15, height=1).grid(row=7, column=3, padx=10, pady=20, sticky=W)
 
         # frm2下的控件
-        Button(self.frm2, text='Start', command=self.start, height=2, width=8).grid(row=0, column=0, padx=20, pady=10,
+        Button(self.frm2, text='Start_Refresh', command=self.start, height=2).grid(row=0, column=0, padx=20, pady=10,
                                                                                     sticky=W)
-        Button(self.frm2, text='Stop', command=self.stop, height=2, width=8).grid(row=0, column=2, padx=20, pady=10,
+        Button(self.frm2, text='Stop_Refresh', command=self.stop, height=2).grid(row=0, column=2, padx=20, pady=10,
                                                                                   sticky=W)
         Button(self.frm2, text='昨日融劵信息', command=self.zuo_ri_zheng_quan_xin_xi(), height=2, width=15).grid(row=2,
                                                                                                            column=0,
